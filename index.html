@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Mirror</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.75)
+                ),
+                url("background.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px 20px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        h1 {
+            margin: 0 0 25px;
+            max-width: 550px;
+
+            font-size: clamp(4rem, 12vw, 8rem);
+            line-height: 0.82;
+            letter-spacing: -5px;
+
+            color: #d354b8;
+        }
+
+        .intro {
+            max-width: 550px;
+            margin-bottom: 35px;
+
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            line-height: 1.35;
+        }
+
+        .button {
+            display: inline-block;
+
+            padding: 16px 30px;
+            border: 2px solid #d354b8;
+            border-radius: 4px;
+
+            background-color: #d354b8;
+            color: black;
+
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+
+            transition: 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        .small-text {
+            margin-top: 18px;
+            max-width: 500px;
+
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-end;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+
+            .content {
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="content">
+
+        <h1>
+            The<br>
+            Mirror
+        </h1>
+
+        <p class="intro">
+            The same space can feel completely different
+            depending on who enters it.
+        </p>
+
+        <a class="button" href="Flyer2.pdf">
+            Enter the experience
+        </a>
+
+        <p class="small-text">
+            Take a moment to explore how gender privilege can shape
+            feelings of freedom, visibility and safety.
+        </p>
+
+    </main>
+
+</body>
+</html>
